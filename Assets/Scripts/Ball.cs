@@ -15,8 +15,10 @@ public class Ball : MonoBehaviour
     }
 
     GameController gameController;
-    InteractionBehaviour interaction;
     MeshRenderer meshRenderer;
+    ConfigurableJoint cj;
+    Rigidbody rb;
+    public bool isDown;
 
     [SerializeField] BallType type;
 
@@ -24,16 +26,34 @@ public class Ball : MonoBehaviour
     void Awake ()
     {
         Physics.IgnoreLayerCollision(0, 8);
-        interaction = GetComponent<InteractionBehaviour>();
+        rb = GetComponent<Rigidbody>();
         gameController = GetComponentInParent<GameController>();
         meshRenderer = GetComponent<MeshRenderer>();
+        cj = GetComponent<ConfigurableJoint>();
 	}
 
     void Start()
     {
-        // gameObject.SetActive(false);
-        // interaction.OnContactBegin += () => { DoHitBall(); };
-        // Invoke("TimesUp", 1.2f);
+        isDown = true;
+        LowerTarget();
+    }
+
+    // On collision with the bottom of the platform 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.name == "Collider")
+        {
+            isDown = true;
+            cj.yDrive = new JointDrive
+            {
+                maximumForce = 0,
+            };
+        }
+    }
+
+    void LowerTarget()
+    {
+        rb.velocity = new Vector3(0, -0.08f, 0);
     }
 
     Color GetColorForType(BallType type)
@@ -71,8 +91,8 @@ public class Ball : MonoBehaviour
 
     public void setActive()
     {
-        // Debug.Log("In Balls");
-        
+        Debug.Log("In Balls");
+        /*
         Array v = Enum.GetValues(typeof(BallType));
         System.Random random = new System.Random();
         BallType randomType = (BallType)v.GetValue(random.Next(v.Length));
@@ -80,7 +100,16 @@ public class Ball : MonoBehaviour
         this.type = randomType;
         meshRenderer.material.color = GetColorForType(type);
         
-        gameObject.SetActive(true);
+        */
+
+
+        cj.yDrive = new JointDrive
+        {
+            maximumForce = 3.402823e+38f,
+            positionSpring = 200.0f,
+            positionDamper = 20f
+        };
+        isDown = false;
     }
 
     void TimesUp()
