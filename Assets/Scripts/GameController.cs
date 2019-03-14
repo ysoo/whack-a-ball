@@ -15,6 +15,8 @@ public class GameController : MonoBehaviour
     float targetTime;
     [SerializeField] bool gamePlaying;
     bool running;
+    public float waveWait;
+    public float spawnOver;
 
     private void Awake()
     {
@@ -22,6 +24,8 @@ public class GameController : MonoBehaviour
         score = 0;
         running = true;
         gamePlaying = true;
+        waveWait = 1.5f;
+        spawnOver = 1.0f;
     }
 
     private void Start()
@@ -44,15 +48,16 @@ public class GameController : MonoBehaviour
         }
     }
 
-
-
     private void TimerEnded()
     {
         gamePlaying = false;
         targetTime = 0f;
         running = false;
         timerText.text = "GAME OVER";
-
+        for (int i = 0; i < ballList.Length; i++)
+        {
+            ballList[i].LowerTarget();
+        }
     }
 
 
@@ -68,25 +73,25 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    
     IEnumerator ballSetActive()
     {
-
-        // Debug.Log("In Ball Set Active and gamePlaying is " +  gamePlaying);
-        while (gamePlaying)
+        while(gamePlaying)
         {
-            Debug.Log("I'm playing the game yay");
-            for (int i = 0; i < maxNum; i++)
+            for(int i = 0; i < maxNum; i++)
             {
-                int j = Random.Range(0, ballList.Length);  
+                int j = Random.Range(0, ballList.Length);
                 if (ballList[j].isDown)
                 {
-                    ballList[j].setActive();
+                    ballList[j].MoveUpAndChangeColor();
                 }
-                yield return new WaitForEndOfFrame();
+                yield return new WaitForSeconds(spawnOver);
+                ballList[j].LowerTarget();
             }
-            yield return new WaitForSeconds(1.0f);
+            yield return new WaitForSeconds(waveWait);
         }
-
         
     }
+
+    
 }
