@@ -238,6 +238,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Animation\ExposeMethodInEditorAttribute.cs" />
+    <Compile Include="Assets\Animation\TweenAnimator.cs" />
+    <Compile Include="Assets\Animation\TweenBlendShapes.cs" />
+    <Compile Include="Assets\Animation\Tweener.cs" />
+    <Compile Include="Assets\Animation\TweenGroup.cs" />
+    <Compile Include="Assets\Animation\TweenLineRenderer.cs" />
+    <Compile Include="Assets\Animation\TweenPosition.cs" />
+    <Compile Include="Assets\Animation\TweenRotation.cs" />
+    <Compile Include="Assets\Animation\TweenScale.cs" />
+    <Compile Include="Assets\Animation\TweenVariable.cs" />
     <Compile Include="Assets\LeapMotion\Core\Examples\Example Assets\InertiaPostProcessProvider.cs" />
     <Compile Include="Assets\LeapMotion\Core\Examples\Example Assets\ProjectionPostProcessProvider.cs" />
     <Compile Include="Assets\LeapMotion\Core\Plugins\LeapCSharp\Arm.cs" />
@@ -483,6 +493,7 @@
     <Compile Include="Assets\LeapMotion\Modules\InteractionEngine\Scripts\Utility\PhysicsCallbacks.cs" />
     <Compile Include="Assets\Scripts\Ball.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\Menu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\LeapMotion\Core\Dependencies.txt" />

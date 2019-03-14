@@ -6,6 +6,7 @@
 # Unity folders to ignore
 /Library/
 /Temp/
+/Assets/Animation/
 
 # User-specific files
 *.suo

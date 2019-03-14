@@ -73,6 +73,12 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    public void EndGame()
+    {
+        Debug.Log("Quit Game");
+        UnityEditor.EditorApplication.isPlaying = false;
+        Application.Quit();
+    }
     
     IEnumerator ballSetActive()
     {
