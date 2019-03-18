@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4270054195690934}
   - component: {fileID: 114132907218321300}
   - component: {fileID: 114211648587357326}
-  - component: {fileID: 114310215181572304}
+  - component: {fileID: 114325246712514450}
   m_Layer: 0
   m_Name: MainMenu
   m_TagString: Untagged
@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 54618145178037654}
   - component: {fileID: 114277089526814012}
   - component: {fileID: 114167743846615172}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 33049265433559650}
   - component: {fileID: 65099211623542208}
   - component: {fileID: 23619662748498656}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ GameObject:
   - component: {fileID: 54105534609838390}
   - component: {fileID: 114013904359857246}
   - component: {fileID: 114026424785094814}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Options
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 33256820017176282}
   - component: {fileID: 65293793902446584}
   - component: {fileID: 23401066756396346}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 33912453159470478}
   - component: {fileID: 65326114698404384}
   - component: {fileID: 23925243265893398}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Button Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 54490844272343360}
   - component: {fileID: 114816413594121746}
   - component: {fileID: 114679510935879388}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Quit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144,9 +144,9 @@ GameObject:
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4436828242056076}
-  - component: {fileID: 33259559559262046}
+  - component: {fileID: 4928470895067478}
   - component: {fileID: 23670319110150522}
+  - component: {fileID: 33726762194797538}
   m_Layer: 0
   m_Name: Panel Cube
   m_TagString: Untagged
@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 33447158621470954}
   - component: {fileID: 65917252986056972}
   - component: {fileID: 23404892103813322}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Button Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 33684975536582450}
   - component: {fileID: 65473667948116386}
   - component: {fileID: 23544611356654092}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Button Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 33203093306872132}
   - component: {fileID: 65203034954209472}
   - component: {fileID: 23632996778072016}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -287,24 +287,11 @@ Transform:
   m_LocalPosition: {x: 0.492, y: 1.4, z: 0.573}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4436828242056076}
+  - {fileID: 4928470895067478}
   - {fileID: 4188423440580654}
   - {fileID: 4159386207945122}
   - {fileID: 4126541721948556}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 25.724, y: 0, z: 0}
---- !u!4 &4436828242056076
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1855797368393098}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.3, z: 0.025}
-  m_Children: []
-  m_Father: {fileID: 4270054195690934}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 25.724, y: 0, z: 0}
 --- !u!4 &4518334537571782
@@ -361,6 +348,19 @@ Transform:
   m_Father: {fileID: 4223926917953728}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4928470895067478
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1855797368393098}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.3, z: 0.025}
+  m_Children: []
+  m_Father: {fileID: 4270054195690934}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 25.724, y: 0, z: 0}
 --- !u!23 &23401066756396346
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -409,7 +409,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: cb707237b19198f4bbc0381c5c11da15, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -443,7 +443,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: cb707237b19198f4bbc0381c5c11da15, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -579,7 +579,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: cb707237b19198f4bbc0381c5c11da15, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -620,13 +620,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1743606461139424}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &33259559559262046
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1855797368393098}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &33447158621470954
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -640,6 +633,13 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1913765325751630}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &33726762194797538
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1855797368393098}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &33912453159470478
 MeshFilter:
@@ -780,7 +780,7 @@ MonoBehaviour:
   _ignoreHoverMode: 0
   _isIgnoringAllHoverState: 0
   _ignorePrimaryHover: 0
-  _ignoreContact: 0
+  _ignoreContact: 1
   _ignoreGrasping: 1
   _contactForceMode: 1
   _allowMultiGrasp: 0
@@ -791,7 +791,7 @@ MonoBehaviour:
     layerIndex: 5
   _overrideNoContactLayer: 0
   _noContactLayer:
-    layerIndex: 0
+    layerIndex: 10
   _eventTable:
     _entries: []
   _controlEnabled: 1
@@ -911,7 +911,7 @@ MonoBehaviour:
   _ignoreHoverMode: 0
   _isIgnoringAllHoverState: 0
   _ignorePrimaryHover: 0
-  _ignoreContact: 0
+  _ignoreContact: 1
   _ignoreGrasping: 1
   _contactForceMode: 1
   _allowMultiGrasp: 0
@@ -922,7 +922,7 @@ MonoBehaviour:
     layerIndex: 5
   _overrideNoContactLayer: 0
   _noContactLayer:
-    layerIndex: 0
+    layerIndex: 10
   _eventTable:
     _entries: []
   _controlEnabled: 1
@@ -934,7 +934,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_MethodName: Restart
+        m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -951,7 +951,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &114310215181572304
+--- !u!114 &114325246712514450
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -959,9 +959,50 @@ MonoBehaviour:
   m_GameObject: {fileID: 1045796654941892}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eae11f9461fea1c40a1f829e1c65e09b, type: 3}
+  m_Script: {fileID: 11500000, guid: fa2596200e4750442b62b2b4b855e9e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Finished:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  Started:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  Style: 0
+  AnimationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  Duration: 0.15
+  StartOnAwake: 1
+  StartOnEnable: 1
+  tValue: 0
+  forward: 1
+  enableDebugLogging: 0
+  breakOnPlay: 0
+  StartScale: {x: 0, y: 0, z: 0}
+  GoalScale: {x: 1, y: 1, z: 1}
+  target: {fileID: 0}
+  StartFromCurrent: 0
+  Unclamped: 0
 --- !u!114 &114679510935879388
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -995,7 +1036,7 @@ MonoBehaviour:
   _ignoreHoverMode: 0
   _isIgnoringAllHoverState: 0
   _ignorePrimaryHover: 0
-  _ignoreContact: 0
+  _ignoreContact: 1
   _ignoreGrasping: 1
   _contactForceMode: 1
   _allowMultiGrasp: 0
@@ -1006,7 +1047,7 @@ MonoBehaviour:
     layerIndex: 5
   _overrideNoContactLayer: 0
   _noContactLayer:
-    layerIndex: 0
+    layerIndex: 10
   _eventTable:
     _entries: []
   _controlEnabled: 1

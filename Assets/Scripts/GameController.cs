@@ -6,39 +6,46 @@ using Leap.Unity.Interaction;
 using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
-{
+{ 
+    enum Difficulty
+    {
+        easy,
+        medium,
+        hard
+    }
+
+    public delegate void GameChangeHandler(GameController sender, bool gamePlaying);
+    public event GameChangeHandler OnStartGame;
+
     [SerializeField] Ball[] ballList;
-    [SerializeField] float maxNum;
+    int maxNum;
+    [SerializeField] Difficulty type;
+
     public TextMesh countText;
     public TextMesh timerText;
     int score;
     float targetTime;
-    [SerializeField] bool gamePlaying;
+    bool gamePlaying;
     bool running;
-    public float waveWait;
-    public float spawnOver;
+    float waveWait;
+    float spawnOver;
+
+
 
     private void Awake()
     {
-        targetTime = 30.0f;
-        score = 0;
-        running = true;
-        gamePlaying = true;
-        waveWait = 1.5f;
-        spawnOver = 1.0f;
+
     }
 
     private void Start()
     {
-        StartCoroutine(ballSetActive());
-        UpdateScore(0);
+        
     }
 
     private void Update()
     {
         if (running)
         {
-
             targetTime -= Time.deltaTime;
             timerText.text = "Time left: " + targetTime;
             if (targetTime <= 0.0f)
@@ -46,6 +53,21 @@ public class GameController : MonoBehaviour
                 TimerEnded();
             }
         }
+    }
+
+    public void StartGame()
+    {
+        waveWait = GetWaveWaitTime(type);
+        spawnOver = GetSpawnTime(type);
+        maxNum = GetMaxNum(type);
+        targetTime = 30.0f;
+        score = 0;
+        UpdateScore(0);
+        running = true;
+        gamePlaying = true;
+        Debug.Log("Start");
+        OnStartGame(this, true);
+        StartCoroutine(ballSetActive());
     }
 
     private void TimerEnded()
@@ -67,12 +89,6 @@ public class GameController : MonoBehaviour
         countText.text = "Score: " + score.ToString();
     }
 
-    public void Restart()
-    {
-        Debug.Log("RESTART");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-
     public void EndGame()
     {
         Debug.Log("Quit Game");
@@ -86,6 +102,8 @@ public class GameController : MonoBehaviour
         {
             for(int i = 0; i < maxNum; i++)
             {
+                Debug.Log("spawn Over: " + spawnOver + " waveWait: " + waveWait);
+
                 int j = Random.Range(0, ballList.Length);
                 if (ballList[j].isDown)
                 {
@@ -99,5 +117,67 @@ public class GameController : MonoBehaviour
         
     }
 
-    
+    #region difficulty
+    public void Hard()
+    {
+        type = Difficulty.hard;
+    }
+
+    public void Medium()
+    {
+        type = Difficulty.medium;
+    }
+
+    public void Easy()
+    {
+        type = Difficulty.easy;
+    }
+
+    int GetMaxNum(Difficulty difficulty)
+    {
+        switch (difficulty)
+        {
+            case Difficulty.easy:
+                return 3;
+            case Difficulty.medium:
+                return 4;
+            case Difficulty.hard:
+                return 5;
+            default:
+                return 3;
+        }
+    }
+
+    float GetWaveWaitTime(Difficulty difficulty)
+    {
+        switch (difficulty)
+        {
+            case Difficulty.easy:
+                return 1.5f;
+            case Difficulty.medium:
+                return 1.0f;
+            case Difficulty.hard:
+                return 0.5f;
+            default:
+                return 1.5f;
+        }
+    }
+
+    float GetSpawnTime(Difficulty difficulty)
+    {
+        switch (difficulty)
+        {
+            case Difficulty.easy:
+                return 1.0f;
+            case Difficulty.medium:
+                return 0.75f;
+            case Difficulty.hard:
+                return 0.5f;
+            default:
+                return 1.0f;
+        }
+    }
+
+    #endregion
+
 }

@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 33380600753298132}
   - component: {fileID: 65539501294796140}
   - component: {fileID: 23613233694110322}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 33628239380876284}
   - component: {fileID: 65874052727125472}
   - component: {fileID: 23774865896035000}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Button Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 33915478718847514}
   - component: {fileID: 65044995694847854}
   - component: {fileID: 23635072952888280}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 33722629658958134}
   - component: {fileID: 65445372686669032}
   - component: {fileID: 23805862565216104}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Button Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 33712728973342640}
   - component: {fileID: 65628572530588888}
   - component: {fileID: 23748094548780330}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Button Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144,7 +144,7 @@ GameObject:
   - component: {fileID: 33690275335469614}
   - component: {fileID: 65796483551872718}
   - component: {fileID: 23748633535303898}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Button Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,7 +162,7 @@ GameObject:
   - component: {fileID: 33953654367305934}
   - component: {fileID: 65566738241030646}
   - component: {fileID: 23030048418000682}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 33611410251312858}
   - component: {fileID: 65040380001577710}
   - component: {fileID: 23925113604299220}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Button Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -230,7 +230,7 @@ GameObject:
   - component: {fileID: 54946937365669178}
   - component: {fileID: 114485228567141766}
   - component: {fileID: 114485563499838338}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube UI Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: 33674074651315730}
   - component: {fileID: 65079056612257312}
   - component: {fileID: 23437823367102138}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -283,7 +283,7 @@ GameObject:
   - component: {fileID: 33413564841946980}
   - component: {fileID: 65505447031057572}
   - component: {fileID: 23830838298531774}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301,7 +301,7 @@ GameObject:
   - component: {fileID: 54915961148623122}
   - component: {fileID: 114367255269124042}
   - component: {fileID: 114887197805316844}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Medium
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -318,6 +318,7 @@ GameObject:
   - component: {fileID: 4556302908153572}
   - component: {fileID: 114970300363362192}
   - component: {fileID: 114821477728600208}
+  - component: {fileID: 114181200827744766}
   m_Layer: 0
   m_Name: OptionsMenu
   m_TagString: Untagged
@@ -336,7 +337,7 @@ GameObject:
   - component: {fileID: 33791496970004268}
   - component: {fileID: 65788417009518088}
   - component: {fileID: 23347177389482460}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -354,7 +355,7 @@ GameObject:
   - component: {fileID: 33342100278353418}
   - component: {fileID: 65758212491139202}
   - component: {fileID: 23923224080403514}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Button Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -372,7 +373,7 @@ GameObject:
   - component: {fileID: 54409992286135054}
   - component: {fileID: 114987121876530470}
   - component: {fileID: 114923499745603452}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: CloseOptionsMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -390,7 +391,7 @@ GameObject:
   - component: {fileID: 54974710149642164}
   - component: {fileID: 114460498423390282}
   - component: {fileID: 114837099934001108}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Easy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -423,7 +424,7 @@ GameObject:
   - component: {fileID: 54881265267807880}
   - component: {fileID: 114809623510711802}
   - component: {fileID: 114072246146399520}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube UI Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -441,7 +442,7 @@ GameObject:
   - component: {fileID: 54733523041342958}
   - component: {fileID: 114859916769191272}
   - component: {fileID: 114383301434292840}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -563,7 +564,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1724589373092388}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.06999999, y: 0.059999984, z: -0.000000011175871}
+  m_LocalPosition: {x: -0.07, y: 0.059999965, z: -0.015000004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4016633182683544}
@@ -617,7 +618,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1510643132265894}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.059999984, z: -0.000000011175871}
+  m_LocalPosition: {x: -0.000000008381903, y: 0.059999965, z: -0.015000004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4556555529151038}
@@ -732,7 +733,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1977632984741816}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.07000001, y: 0.059999984, z: -0.000000011175871}
+  m_LocalPosition: {x: 0.069999985, y: 0.059999965, z: -0.015000004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4157702379394366}
@@ -1025,7 +1026,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: cb707237b19198f4bbc0381c5c11da15, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1059,7 +1060,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: cb707237b19198f4bbc0381c5c11da15, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1093,7 +1094,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: cb707237b19198f4bbc0381c5c11da15, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1127,7 +1128,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: cb707237b19198f4bbc0381c5c11da15, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1195,7 +1196,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: cb707237b19198f4bbc0381c5c11da15, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1229,7 +1230,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: cb707237b19198f4bbc0381c5c11da15, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1606,6 +1607,58 @@ MonoBehaviour:
   hoverColor: {r: 0.7, g: 0.7, b: 0.7, a: 1}
   primaryHoverColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   pressedColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &114181200827744766
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1618903634467068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa2596200e4750442b62b2b4b855e9e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Finished:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  Started:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  Style: 0
+  AnimationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  Duration: 0.15
+  StartOnAwake: 0
+  StartOnEnable: 1
+  tValue: 0
+  forward: 1
+  enableDebugLogging: 0
+  breakOnPlay: 0
+  StartScale: {x: 0, y: 0, z: 0}
+  GoalScale: {x: 1, y: 1, z: 1}
+  target: {fileID: 4556302908153572}
+  StartFromCurrent: 0
+  Unclamped: 0
 --- !u!114 &114367255269124042
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1621,7 +1674,7 @@ MonoBehaviour:
   _ignoreHoverMode: 0
   _isIgnoringAllHoverState: 0
   _ignorePrimaryHover: 0
-  _ignoreContact: 0
+  _ignoreContact: 1
   _ignoreGrasping: 1
   _contactForceMode: 1
   _allowMultiGrasp: 0
@@ -1632,7 +1685,7 @@ MonoBehaviour:
     layerIndex: 5
   _overrideNoContactLayer: 0
   _noContactLayer:
-    layerIndex: 0
+    layerIndex: 10
   _eventTable:
     _entries: []
   _controlEnabled: 1
@@ -1642,7 +1695,18 @@ MonoBehaviour:
   _springForce: 0.1
   _OnPress:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: Medium
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   _OnUnpress:
@@ -1683,7 +1747,7 @@ MonoBehaviour:
   _ignoreHoverMode: 0
   _isIgnoringAllHoverState: 0
   _ignorePrimaryHover: 0
-  _ignoreContact: 0
+  _ignoreContact: 1
   _ignoreGrasping: 1
   _contactForceMode: 1
   _allowMultiGrasp: 0
@@ -1694,7 +1758,7 @@ MonoBehaviour:
     layerIndex: 5
   _overrideNoContactLayer: 0
   _noContactLayer:
-    layerIndex: 0
+    layerIndex: 10
   _eventTable:
     _entries: []
   _controlEnabled: 1
@@ -1704,7 +1768,18 @@ MonoBehaviour:
   _springForce: 0.1
   _OnPress:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: Easy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   _OnUnpress:
@@ -1727,18 +1802,18 @@ MonoBehaviour:
   _ignoreHoverMode: 0
   _isIgnoringAllHoverState: 0
   _ignorePrimaryHover: 0
-  _ignoreContact: 0
-  _ignoreGrasping: 0
+  _ignoreContact: 1
+  _ignoreGrasping: 1
   _contactForceMode: 1
   _allowMultiGrasp: 0
   _moveObjectWhenGrasped: 1
   graspedMovementType: 0
   _overrideInteractionLayer: 0
   _interactionLayer:
-    layerIndex: 0
+    layerIndex: 9
   _overrideNoContactLayer: 0
   _noContactLayer:
-    layerIndex: 0
+    layerIndex: 10
   _eventTable:
     _entries: []
   _controlEnabled: 1
@@ -1768,11 +1843,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+        m_MethodName: set_volume
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1782,7 +1857,7 @@ MonoBehaviour:
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   defaultVerticalValue: 0
   _verticalValueRange: {x: 0, y: 1}
-  verticalSlideLimits: {x: -0.005000001, y: 0.005000001}
+  verticalSlideLimits: {x: 0, y: 0}
   verticalSteps: 0
   _verticalSlideEvent:
     m_PersistentCalls:
@@ -1822,18 +1897,18 @@ MonoBehaviour:
   _ignoreHoverMode: 0
   _isIgnoringAllHoverState: 0
   _ignorePrimaryHover: 0
-  _ignoreContact: 0
-  _ignoreGrasping: 0
+  _ignoreContact: 1
+  _ignoreGrasping: 1
   _contactForceMode: 1
   _allowMultiGrasp: 0
   _moveObjectWhenGrasped: 1
   graspedMovementType: 0
   _overrideInteractionLayer: 0
   _interactionLayer:
-    layerIndex: 0
+    layerIndex: 9
   _overrideNoContactLayer: 0
   _noContactLayer:
-    layerIndex: 0
+    layerIndex: 10
   _eventTable:
     _entries: []
   _controlEnabled: 1
@@ -1866,7 +1941,7 @@ MonoBehaviour:
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   defaultVerticalValue: 0
   _verticalValueRange: {x: 0, y: 1}
-  verticalSlideLimits: {x: -0.005000001, y: 0.005000001}
+  verticalSlideLimits: {x: 0, y: 0}
   verticalSteps: 0
   _verticalSlideEvent:
     m_PersistentCalls:
@@ -1917,7 +1992,7 @@ MonoBehaviour:
   _ignoreHoverMode: 0
   _isIgnoringAllHoverState: 0
   _ignorePrimaryHover: 0
-  _ignoreContact: 0
+  _ignoreContact: 1
   _ignoreGrasping: 1
   _contactForceMode: 1
   _allowMultiGrasp: 0
@@ -1928,7 +2003,7 @@ MonoBehaviour:
     layerIndex: 5
   _overrideNoContactLayer: 0
   _noContactLayer:
-    layerIndex: 0
+    layerIndex: 10
   _eventTable:
     _entries: []
   _controlEnabled: 1
@@ -1938,7 +2013,18 @@ MonoBehaviour:
   _springForce: 0.1
   _OnPress:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: Hard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   _OnUnpress:
@@ -2015,7 +2101,7 @@ MonoBehaviour:
   _ignoreHoverMode: 0
   _isIgnoringAllHoverState: 0
   _ignorePrimaryHover: 0
-  _ignoreContact: 0
+  _ignoreContact: 1
   _ignoreGrasping: 1
   _contactForceMode: 1
   _allowMultiGrasp: 0
@@ -2026,7 +2112,7 @@ MonoBehaviour:
     layerIndex: 5
   _overrideNoContactLayer: 0
   _noContactLayer:
-    layerIndex: 0
+    layerIndex: 10
   _eventTable:
     _entries: []
   _controlEnabled: 1
@@ -2073,7 +2159,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1879572619842012}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.0046}
+  m_LocalPosition: {x: 0, y: 0, z: -0.022181788}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4408911885168956}
@@ -2082,7 +2168,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0}
+  m_AnchoredPosition: {x: 0, y: -0.000000027008355}
   m_SizeDelta: {x: 0.035, y: 0.035}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224613348336596462
@@ -2092,7 +2178,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1414465733986850}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.0046}
+  m_LocalPosition: {x: 0, y: 0, z: -0.014599964}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4863790609602106}
@@ -2101,7 +2187,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0}
+  m_AnchoredPosition: {x: 0, y: -0.000000037252903}
   m_SizeDelta: {x: 0.035, y: 0.035}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224735636805618690

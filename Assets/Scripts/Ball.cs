@@ -23,7 +23,9 @@ public class Ball : MonoBehaviour
     public bool isDown;
     AudioSource audio;
     public Material fur;
-    public UnityAction _moveUp;
+
+    bool lowering;
+
 
     [SerializeField] BallType type;
 
@@ -41,9 +43,14 @@ public class Ball : MonoBehaviour
 
     void Start()
     {
-        isDown = true;
-        LowerTarget();
         interaction.OnContactStay += DoSound;
+        gameController.OnStartGame += GameState_Changed;
+    }
+
+    void GameState_Changed(GameController sender, bool isPlaying)
+    {
+        LowerTarget();
+        isDown = true;
     }
 
     void DoSound()
@@ -52,19 +59,26 @@ public class Ball : MonoBehaviour
     }
 
     // On collision with the bottom of the platform 
+    // We freeze it's movement and then update scores
     private void OnTriggerEnter(Collider collider) 
     {
-        if (collider.gameObject.name == "Collider")
+        if (collider.gameObject.name == "Collider" && !lowering)
         {
             isDown = true;
             rb.constraints = RigidbodyConstraints.FreezeAll;
             gameController.UpdateScore(GetScoreForType(type));
             Debug.Log("Got Hit");
         }
+        lowering = false;
     }
 
+
+    /*
+     * Lower the current balls and resets it's color and isDown 
+     */
     public void LowerTarget()
     {
+        lowering = true;
         isDown = true;
         cj.yDrive = new JointDrive
         {
@@ -72,7 +86,7 @@ public class Ball : MonoBehaviour
             positionSpring = 0,
             positionDamper = 0
         };
-        rb.velocity = new Vector3(0, -0.15f, 0);
+        rb.velocity = new Vector3(0, -0.23f, 0);
         for (int i = 0; i < meshRenderer.Length; i++)
         {
             if (meshRenderer[i].tag == "changeMaterial")
@@ -117,7 +131,7 @@ public class Ball : MonoBehaviour
     {
         Debug.Log("In Balls");
         rb.constraints = RigidbodyConstraints.None;
-        rb.AddForce(transform.up * 5);
+        rb.AddForce(transform.up * 10);
         Array v = Enum.GetValues(typeof(BallType));
         System.Random random = new System.Random();
         BallType randomType = (BallType)v.GetValue(random.Next(v.Length));
