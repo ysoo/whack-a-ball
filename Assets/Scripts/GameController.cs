@@ -29,17 +29,17 @@ public class GameController : MonoBehaviour
     bool running;
     float waveWait;
     float spawnOver;
-
+    AudioSource music;
 
 
     private void Awake()
     {
-
+        music = GetComponent<AudioSource>();
     }
 
     private void Start()
     {
-        
+        music.Play();
     }
 
     private void Update()
@@ -66,7 +66,6 @@ public class GameController : MonoBehaviour
         running = true;
         gamePlaying = true;
         Debug.Log("Start");
-        OnStartGame(this, true);
         StartCoroutine(ballSetActive());
     }
 
@@ -76,10 +75,7 @@ public class GameController : MonoBehaviour
         targetTime = 0f;
         running = false;
         timerText.text = "GAME OVER";
-        for (int i = 0; i < ballList.Length; i++)
-        {
-            ballList[i].LowerTarget();
-        }
+        OnStartGame(this, false);
     }
 
 

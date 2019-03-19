@@ -43,19 +43,43 @@ public class Ball : MonoBehaviour
 
     void Start()
     {
-        interaction.OnContactStay += DoSound;
+        LowerTarget();
+        interaction.OnContactBegin += DoSound;
         gameController.OnStartGame += GameState_Changed;
     }
 
     void GameState_Changed(GameController sender, bool isPlaying)
     {
         LowerTarget();
-        isDown = true;
     }
 
     void DoSound()
     {
         audio.Play();
+    }
+
+    private void FixedUpdate()
+    {
+        if (isDown)
+        {
+            cj.yDrive = new JointDrive
+            {
+                maximumForce = 0.0f,
+                positionSpring = 0.0f,
+                positionDamper = 0.0f
+            };
+            rb.AddForce(transform.up * -10);
+        }
+        else
+        {
+            cj.yDrive = new JointDrive
+            {
+                maximumForce = 3.402823e+38f,
+                positionSpring = 200.0f,
+                positionDamper = 20f
+            };
+            rb.AddForce(transform.up * 10);
+        }
     }
 
     // On collision with the bottom of the platform 
@@ -65,7 +89,6 @@ public class Ball : MonoBehaviour
         if (collider.gameObject.name == "Collider" && !lowering)
         {
             isDown = true;
-            rb.constraints = RigidbodyConstraints.FreezeAll;
             gameController.UpdateScore(GetScoreForType(type));
             Debug.Log("Got Hit");
         }
@@ -80,13 +103,6 @@ public class Ball : MonoBehaviour
     {
         lowering = true;
         isDown = true;
-        cj.yDrive = new JointDrive
-        {
-            maximumForce = 0,
-            positionSpring = 0,
-            positionDamper = 0
-        };
-        rb.velocity = new Vector3(0, -0.23f, 0);
         for (int i = 0; i < meshRenderer.Length; i++)
         {
             if (meshRenderer[i].tag == "changeMaterial")
@@ -130,25 +146,19 @@ public class Ball : MonoBehaviour
     public void MoveUpAndChangeColor()
     {
         Debug.Log("In Balls");
-        rb.constraints = RigidbodyConstraints.None;
-        rb.AddForce(transform.up * 10);
+       
+       
         Array v = Enum.GetValues(typeof(BallType));
         System.Random random = new System.Random();
         BallType randomType = (BallType)v.GetValue(random.Next(v.Length));
         isDown = false;
         this.type = randomType;
+
         for(int i = 0; i < meshRenderer.Length; i++)
         {
             if(meshRenderer[i].tag == "changeMaterial")
                 meshRenderer[i].material.color = GetColorForType(type);
         }
-        
-        cj.yDrive = new JointDrive
-        {
-            maximumForce = 3.402823e+38f,
-            positionSpring = 200.0f,
-            positionDamper = 20f
-        };
         
     }
 }
