@@ -89,10 +89,11 @@ public class Ball : MonoBehaviour
         if (collider.gameObject.name == "Collider" && !lowering)
         {
             isDown = true;
+            lowering = true;
             gameController.UpdateScore(GetScoreForType(type));
             Debug.Log("Got Hit");
         }
-        lowering = false;
+
     }
 
 
@@ -152,6 +153,7 @@ public class Ball : MonoBehaviour
         System.Random random = new System.Random();
         BallType randomType = (BallType)v.GetValue(random.Next(v.Length));
         isDown = false;
+        lowering = false;
         this.type = randomType;
 
         for(int i = 0; i < meshRenderer.Length; i++)
